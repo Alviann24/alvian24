@@ -1,0 +1,111 @@
+head, body {
+    overflow-x: hidden;
+}
+
+.jumbotron{
+    padding-top: 2rem;
+    background-color: #fdffe2;
+
+}
+.jumbotron-img {
+
+    animation: slideInFromTop 2s ease-in-out;
+    justify-content: center;
+    scale: 50%;
+    padding-bottom: -100%;
+    padding-top: -100%;
+   
+}
+.jumbotron-img img {
+    scale: 110%;
+    background-size: cover;
+    transition : 0.5s;
+}
+.jumbotron-img img:hover{
+    scale: 1;
+    
+}
+
+.layout{
+    background-color: #ffc109;
+}
+#projects{
+    padding-top: 4rem;
+    background-color: #ffc109;
+}
+#contact{
+    padding-top: 4rem;
+    background-color: #fdffe2;
+}
+.card-img {
+    width: 100%;
+    overflow: hidden;
+}
+.card-img img {
+    width: 100%;
+    background-size: cover;
+    transition : 0.5s;
+}
+.card-img img:hover{
+    scale: 1.05;
+}
+.button{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fdd55e;
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #f9bb00;
+    color: #fdffe2;
+}
+.logo {
+    scale: 0.3;
+    height: 100px;
+}
+
+.alvian {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 58%;
+    animation: typing 2s steps(70);
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 58%;
+    }
+  }
+  .born {
+    animation: slideInFromBottom 2s ease-in-out;
+  }
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-40%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .navbar{
+    animation: slideInFromTop 2s ease-in-out;
+  }
